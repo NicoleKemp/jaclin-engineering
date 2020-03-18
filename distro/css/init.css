@@ -6758,7 +6758,7 @@ a.blue-link {
   color: #1B2250;
 }
 .navbar.navbar-white.affix-top .navbar-brand {
-  background: url(/images/logo-colour.png) no-repeat;
+  background: url(../images/logo-colour.png) no-repeat;
   background-size: contain;
 }
 .navbar.affix {
@@ -6772,12 +6772,12 @@ a.blue-link {
   color: #1B2250;
 }
 .navbar.affix .navbar-brand {
-  background: url(/images/logo-colour.png) no-repeat;
+  background: url(../images/logo-colour.png) no-repeat;
   background-size: contain;
 }
 .navbar .navbar-brand {
   padding: 0;
-  background: url(/images/logo-white.png) no-repeat;
+  background: url(../images/logo-white.png) no-repeat;
   background-size: contain;
   height: 60px;
   width: 180px;
@@ -6804,7 +6804,7 @@ a.blue-link {
     background: #1B2250;
   }
   .navbar.affix-top .navbar-brand {
-    background: url(/images/logo-white.png) no-repeat !important;
+    background: url(../images/logo-white.png) no-repeat !important;
     background-size: contain !important;
   }
 }
@@ -6814,7 +6814,7 @@ a.blue-link {
   border-radius: 200px;
   margin: 2rem auto;
   overflow: hidden;
-  background: #f7f7f7 url(/images/jacques-verwey.jpg) bottom center;
+  background: #f7f7f7 url(../images/jacques-verwey.jpg) bottom center;
   background-size: cover;
 }
 #about-us p {
@@ -6822,7 +6822,7 @@ a.blue-link {
   text-align: justify;
 }
 .home-page-bg {
-  background: url(/images/home-bg.png) fixed no-repeat center;
+  background: url(../images/home-bg.png) fixed no-repeat center;
   background-size: cover;
   margin-top: -102px;
   height: 100vh;
@@ -6917,87 +6917,87 @@ a.blue-link {
   border: 1px solid #1B2250;
 }
 .product-block.steam-valve {
-  background: url(/images/products/steam-valve-logo.png) no-repeat center center;
+  background: url(../images/products/steam-valve-logo.png) no-repeat center center;
   background-size: 80%;
 }
 .product-block.miyawaki {
-  background: url(/images/products/miyawaki-white.png) no-repeat center center;
+  background: url(../images/products/miyawaki-white.png) no-repeat center center;
   background-size: 80%;
 }
 .product-block.atam {
-  background: url(/images/products/atam-white.png) no-repeat center center;
+  background: url(../images/products/atam-white.png) no-repeat center center;
   background-size: 80%;
 }
 .product-block.deca {
-  background: url(/images/products/deca-white.png) no-repeat center center;
+  background: url(../images/products/deca-white.png) no-repeat center center;
   background-size: 80%;
 }
 .product-block.jk {
-  background: url(/images/products/jk-white.png) no-repeat center center;
+  background: url(../images/products/jk-white.png) no-repeat center center;
   background-size: 80%;
 }
 .product-block.miyawaki-blue {
-  background: url(/images/products/miyawaki-blue.png) no-repeat center center;
+  background: url(../images/products/miyawaki-blue.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.miyawaki-blue:hover {
-  background: url(/images/products/miyawaki.png) no-repeat center center;
+  background: url(../images/products/miyawaki.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.atam-blue {
-  background: url(/images/products/atam-blue.png) no-repeat center center;
+  background: url(../images/products/atam-blue.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.atam-blue:hover {
-  background: url(/images/products/atam.png) no-repeat center center;
+  background: url(../images/products/atam.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.deca-blue {
-  background: url(/images/products/deca-blue.png) no-repeat center center;
+  background: url(../images/products/deca-blue.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.deca-blue:hover {
-  background: url(/images/products/deca.png) no-repeat center center;
+  background: url(../images/products/deca.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.jk-blue {
-  background: url(/images/products/jk-blue.png) no-repeat center center;
+  background: url(../images/products/jk-blue.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.jk-blue:hover {
-  background: url(/images/products/jk.png) no-repeat center center;
+  background: url(../images/products/jk.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.armaturen-blue {
-  background: url(/images/products/armaturen-blue.png) no-repeat center center;
+  background: url(../images/products/armaturen-blue.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.armaturen-blue:hover {
-  background: url(/images/products/armaturen.png) no-repeat center center;
+  background: url(../images/products/armaturen.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.mega-blue {
-  background: url(/images/products/mega-blue.png) no-repeat center center;
+  background: url(../images/products/mega-blue.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.mega-blue:hover {
-  background: url(/images/products/mega.png) no-repeat center center;
+  background: url(../images/products/mega.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.mipel-blue {
-  background: url(/images/products/mipel-blue.png) no-repeat center center;
+  background: url(../images/products/mipel-blue.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.mipel-blue:hover {
-  background: url(/images/products/mipel.png) no-repeat center center;
+  background: url(../images/products/mipel.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.verimex-blue {
-  background: url(/images/products/varimex-blue.png) no-repeat center center;
+  background: url(../images/products/varimex-blue.png) no-repeat center center;
   background-size: auto;
 }
 .product-block.verimex-blue:hover {
-  background: url(/images/products/varimex.png) no-repeat center center;
+  background: url(../images/products/varimex.png) no-repeat center center;
   background-size: auto;
 }
 .services .services-row {
@@ -7111,7 +7111,7 @@ footer ul li + li {
   content: '';
   width: 35px;
   height: 35px;
-  background: url(/images/gallery/ic-gallery.svg) center no-repeat;
+  background: url(../images/gallery/ic-gallery.svg) center no-repeat;
   background-size: contain;
   display: block;
   position: absolute;
@@ -7119,71 +7119,71 @@ footer ul li + li {
   right: 10px;
 }
 .article-image.chilled-water-system {
-  background: url(/images/gallery/chilled-water-system/chilled_0.jpg) center no-repeat;
+  background: url(../images/gallery/chilled-water-system/chilled_0.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.compressor-station {
-  background: url(/images/gallery/compressor-station/compressor_0.jpg) center no-repeat;
+  background: url(../images/gallery/compressor-station/compressor_0.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.cooling-water-system {
-  background: url(/images/gallery/cooling-water-system/cooling_0.jpg) center no-repeat;
+  background: url(../images/gallery/cooling-water-system/cooling_0.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.water-storage {
-  background: url(/images/gallery/water-storage/water_0.jpg) center no-repeat;
+  background: url(../images/gallery/water-storage/water_0.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.corrugated {
-  background: url(/images/gallery/corrugated/currogated_0.jpg) center no-repeat;
+  background: url(../images/gallery/corrugated/currogated_0.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.boiler-move {
-  background: url(/images/gallery/boiler-move-1.jpg) center no-repeat;
+  background: url(../images/gallery/boiler-move-1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.new-compressor {
-  background: url(/images/gallery/new-compressor-room-1.jpg) center no-repeat;
+  background: url(../images/gallery/new-compressor-room-1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.chilled-water {
-  background: url(/images/gallery/chilled-water-1.jpg) center no-repeat;
+  background: url(../images/gallery/chilled-water-1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.hot-oil {
-  background: url(/images/gallery/hot-oil-vapour-1.jpg) center no-repeat;
+  background: url(../images/gallery/hot-oil-vapour-1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.basket-loader {
-  background: url(/images/gallery/basket-loader-1.jpg) center no-repeat;
+  background: url(../images/gallery/basket-loader-1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.chimney-stack {
-  background: url(/images/gallery/boiler-chimney-1.jpg) center no-repeat;
+  background: url(../images/gallery/boiler-chimney-1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.central-vaccum {
-  background: url(/images/gallery/central-vaccum/central-vaccum-1.jpg) center no-repeat;
+  background: url(../images/gallery/central-vaccum/central-vaccum-1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.boiler-installation {
-  background: url(/images/gallery/boiler-installation/boiler_1.jpg) center no-repeat;
+  background: url(../images/gallery/boiler-installation/boiler_1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.chilled-water-winery {
-  background: url(/images/gallery/carmen-wines/carmen_1.jpg) center no-repeat;
+  background: url(../images/gallery/carmen-wines/carmen_1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.darling-wines {
-  background: url(/images/gallery/darling-wines/darling_wines_1.jpg) center no-repeat;
+  background: url(../images/gallery/darling-wines/darling_wines_1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.franschhoek {
-  background: url(/images/gallery/franschhoek/franschhoek_1.jpg) center no-repeat;
+  background: url(../images/gallery/franschhoek/franschhoek_1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.compressor-revamp {
-  background: url(/images/gallery/compressor-revamp/compressor_revamp_1.jpg) center no-repeat;
+  background: url(../images/gallery/compressor-revamp/compressor_revamp_1.jpg) center no-repeat;
   background-size: cover;
 }
 .article-list {
