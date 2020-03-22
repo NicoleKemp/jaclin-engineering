@@ -7118,6 +7118,22 @@ footer ul li + li {
   bottom: 10px;
   right: 10px;
 }
+.article-image.clothing-factory {
+  background: url(../images/gallery/clothing-factory/house-1.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.boschendal {
+  background: url(../images/gallery/boschendal-winery/bosch-2.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.colibri {
+  background: url(../images/gallery/colibri/colibri-1.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.steam-header {
+  background: url(../images/gallery/steam-header/prom-1.jpg) center no-repeat;
+  background-size: cover;
+}
 .article-image.chilled-water-system {
   background: url(../images/gallery/chilled-water-system/chilled_0.jpg) center no-repeat;
   background-size: cover;

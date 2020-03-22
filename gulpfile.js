@@ -11,7 +11,7 @@ gulp.task('compile-less', function(done) {
     .pipe(gulp.dest('./distro/css/'))
     .pipe(browserSync.reload({
       stream: true
-    }))
+    }));
     done();
 });
 /* Task to watch less changes */
