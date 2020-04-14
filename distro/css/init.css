@@ -7130,6 +7130,14 @@ footer ul li + li {
   background: url(../images/gallery/colibri/colibri-1.jpg) center no-repeat;
   background-size: cover;
 }
+.article-image.romatex {
+  background: url(../images/gallery/romatex/1.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.pe {
+  background: url(../images/gallery/pe/1.jpg) center no-repeat;
+  background-size: cover;
+}
 .article-image.steam-header {
   background: url(../images/gallery/steam-header/prom-1.jpg) center no-repeat;
   background-size: cover;
