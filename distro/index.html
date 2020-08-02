@@ -15,7 +15,9 @@
   <meta name="description" content="We are a young, dynamic and professional Engineering Company with a wealth of experience, who renders high quality and cost-effective solutions and service to our clients.">
   <title>Jaclin Engineering | Home</title>
   <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="bower_components/aos/dist/aos.css">
   <link rel="stylesheet" type="text/css" href="css/init.css">
+
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110068516-1"></script>
@@ -29,10 +31,11 @@
   
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/aos/dist/aos.js"></script>
   <script src="js/main.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default" data-spy="affix" data-offset-top="60">
+<nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="60">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -48,111 +51,190 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="active" href="#">HOME</a></li>
-        <li><a href="#about-us">ABOUT</a></li>
-        <li><a href="products.html">PRODUCTS</a></li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="gallery.html">GALLERY</a></li>
-        <li><a href="#contact">CONTACT</a></li>
+        <li data-aos="fade-in" data-aos-delay="50"><a class="active" href="#">HOME</a></li>
+        <li data-aos="fade-in" data-aos-delay="100"><a href="#specialists">SERVICES</a></li>
+        <li data-aos="fade-in" data-aos-delay="150"><a href="products.html">VALVES</a></li>
+        <li data-aos="fade-in" data-aos-delay="200"><a href="gallery.html">GALLERY</a></li>
+        <li data-aos="fade-in" data-aos-delay="250"><a href="#about-us">ABOUT</a></li>
+        <li data-aos="fade-in" data-aos-delay="300"><a href="#contact">CONTACT</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
 <div class="home-page-bg">
   <div class="container">
-    <div class="intro">Pushing the Boundaries of Customer Satisfaction!</div>
-    <a href="#about-us" class="page-down">
-      <img src="images/ic-arrow-down.png">
+    <div class="intro" data-aos="fade-down" data-aos-delay="100">Professional Mechanical, Project and Process Engineers, Engineer, Procure and Construct (EPC) Specialists.</div>
+    <a href="#specialists" class="page-down">
+      <img src="images/ic-arrow-down.svg">
     </a>
   </div>
 </div>
-
-
-<div id="about-us" class="about-us section white-bg">
+<div id="specialists" class="specialists section white-bg text-center">
   <div class="container">
-    <h1><span class="bold-header">About</span> Us</h1>
-
-    <p>We are a young, dynamic and professional Engineering Company with a wealth of
-      experience, who renders high quality and cost-effective solutions and service to our clients.<p>
-
-    <div class="about-pic">
-      <!--<img src="images/jacques-verwey.jpg" alt="Jacques Verwey"/>-->
+    <h1 data-aos="zoom-in">Specialists in Mechanical Utilities</h1>
+    <p>Our expertise includes, design, construction, maintenance, troubleshooting and energy optimization of the following mechanical utilities:</p>
+    <div class="row">
+      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="200">
+        <img src="images/utilities/steam.svg" alt="Steam">
+        <h4>Steam</h4>
+      </div>
+      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="300">
+        <img src="images/utilities/compressed-air.svg" alt="Compressed Air">
+        <h4>Compressed Air</h4>
+      </div>
+      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="400">
+        <img src="images/utilities/chilled-water.svg" alt="Chilled Water">
+        <h4>Chilled Water</h4>
+      </div>
+      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="500">
+        <img src="images/utilities/warm-water.svg" alt="Warm Water">
+        <h4>Warm Water</h4>
+      </div>
+      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="600">
+        <img src="images/utilities/themal-oil.svg" alt="Thermal Oil">
+        <h4>Thermal Oil</h4>
+      </div>
+      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="700">
+        <img src="images/utilities/general.svg" alt="General">
+        <h4>General</h4>
+      </div>
     </div>
-
-      <p>Jacques Verwey (Pr Cert Eng), a registered Professional Engineer (Pr Eng) as well as a Certificated Engineer
-      (Cert Eng – GCC), is the founder and owner of Jaclin Engineering (Pty) Limited.  He spent the first 25 years of
-      his Mechanical Engineering career in the textile industry as Plant Engineer and Chief Engineer, respectively, for
-      two internationally owned companies.   He designed, built and maintained both woven textile and non-woven textile
-      plants in Cape Town.  His experience over the years encompassed complete plant infrastructure systems including steam,
-      high pressure hot water, compressed air, vacuum systems, LPG, HVAC as well as 11kV electrical reticulation systems.<br><br>
-
-      Jacques jointly started a steam trap company in 2008 and was instrumental in developing a range of unique steam
-      traps. Having designed, built, run and maintained boiler and steam plants for 25 years, Jacques has extensive “hands-on”
-      experience with steam systems and steam trapping.  He enjoys steam system design, improvements, as well as troubleshooting.<br><br>
-
-      Jacques broke away from his previous company in 2016, together with his colleague Byron Cupido, and decided to
-      broaden their customer base by using their more than 40 years of joint hands-on experience in industry and factory
-      utilities.  Jaclin Engineering offers industry a variety of specialised mechanical products and professional services.</p>
-  </div>
 </div>
-
+</div>
 <div class="products section blue-bg">
   <div class="container">
-    <h1><span class="bold-header">Our</span> Products</h1>
+    <h1 data-aos="zoom-in">Our Products</h1>
+    <div class="d-flex">
+      <div class="block-white" data-aos="zoom-in" data-aos-delay="100">
+        <div>
+          <h4>Steam</h4>
+          <div class="badge">Boilers</div>
+          <div class="badge">Pumps</div>
+          <div class="badge">Valves</div>
+          <div class="badge">Separators</div>
+          <div class="badge">Steam Traps</div>
+          <div class="badge">Hotwell Tanks</div>
+        </div>
+      </div>
+      <div class="block-white" data-aos="zoom-in" data-aos-delay="200">
+        <div>
+          <h4>Compressed Air</h4>
+          <div class="badge">Filter</div>
+          <div class="badge">Valves</div>
+          <div class="badge">Air Dryers</div>
+          <div class="badge">Compressors</div>
+          <div class="badge">Air Receivers</div>
+        </div>
+      </div>
+      <div class="block-white" data-aos="zoom-in" data-aos-delay="300">
+        <div>
+          <h4>Chilled Water</h4>
+          <div class="badge">Tanks</div>
+          <div class="badge">Valves</div>
+          <div class="badge">Chillers</div>
+          <div class="badge">Pumps</div>
+          <div class="badge">Cooling Towers</div>
+        </div>
+      </div>
+      <div class="block-white" data-aos="zoom-in" data-aos-delay="400">
+        <div>
+          <h4>Warm Water</h4>
+          <div class="badge">Tanks</div>
+          <div class="badge">Pumps</div>
+          <div class="badge">Valves</div>
+          <div class="badge">Heaters</div>
+        </div>
+      </div>
+      <div class="block-white" data-aos="zoom-in" data-aos-delay="500">
+        <div>
+          <h4>Thermal Oil</h4>
+          <div class="badge">Pumps</div>
+          <div class="badge">Valves</div>
+          <div class="badge">Heaters</div>
+          <div class="badge">Expansion &amp; Deaerator Vessels</div>
+        </div>
+      </div>
+      <div class="block-white" data-aos="zoom-in" data-aos-delay="600">
+        <div>
+          <h4>General</h4>
+          <div class="badge">Ducting</div>
+          <div class="badge">Thermal Insulation</div>
+          <div class="badge">Valve Refurbishment &amp; Testing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="valves section grey-bg">
+  <div class="container">
+    <h1 data-aos="zoom-in">Valves</h1>
     <p>We stock and sell a wide range of exclusive valves.</p>
     <br>
     <div class="product-row">
-      <a href="miyawaki.html" class="product-block miyawaki"></a>
-      <a href="atam.html" class="product-block atam"></a>
-      <a href="deca.html" class="product-block deca"></a>
-      <a href="jk.html" class="product-block jk"></a>
+      <a href="miyawaki.html" class="product-block blue-border miyawaki" data-aos="flip-up"></a>
+      <a href="atam.html" class="product-block blue-border atam" data-aos="flip-up"></a>
+      <a href="deca.html" class="product-block blue-border deca" data-aos="flip-up"></a>
+      <a href="jk.html" class="product-block blue-border jk" data-aos="flip-up"></a>
     </div>
     <br>
-    <a class="white-link" href="products.html">See More Products</a>
+    <a class="btn btn-primary btn-lg text-uppercase" href="products.html">See More Brands</a>
   </div>
 </div>
-
-<div class="services section white-bg">
+<div id="services" class="services section white-bg">
   <div class="container">
-    <h1><span class="bold-header">Services</span></h1>
-    <p>We offer a wide range of services, some of which include:</p>
+    <h1 data-aos="zoom-in">Services We Offer</h1>
     <br>
-    <div class="services-row row">
-      <div class="col-sm-2">
-        <img src="images/services/ic-boiler-cleaning.png">
-        <h5>Boiler Supply, Installation &amp; Relocation</h5>
+    <div class="row">
+      <div class="col-md-5 col-md-offset-2">
+        <ul>
+          <li data-aos="fade-left" data-aos-delay="100">Statutory Inspection of Boilers & Pressure Vessels</li>
+          <li data-aos="fade-left" data-aos-delay="150">Pressure Vessel & Pressure System Design & Stress Analysis</li>
+          <li data-aos="fade-left" data-aos-delay="200">Structural Design</li>
+          <li data-aos="fade-left" data-aos-delay="250">General Fabrication</li>
+          <li data-aos="fade-left" data-aos-delay="300">Coded Welding</li>
+        </ul>
       </div>
-      <div class="col-sm-2">
-        <img src="images/services/ic-mounts-boiler.png">
-        <h5>36 month Statutory Inspections</h5>
-      </div>
-      <div class="col-sm-2">
-        <img src="images/services/ic-boilers-tubes.png">
-        <h5>Boiler Repairs &amp; Re-tubing</h5>
-      </div>
-      <div class="col-sm-2">
-        <img src="images/services/ic-pressure-testing.png">
-        <h5>Pressure Vessels Supply, Inspection &amp; Repairs</h5>
-      </div>
-      <div class="col-sm-2">
-        <img src="images/services/ic-chimney-stack.png">
-        <h5>Boiler Chimney Stack Replacement</h5>
-      </div>
-      <div class="col-sm-2">
-        <img src="images/services/ic-tanks.png">
-        <h5>Fabrication of Hotwell &amp; Tanks</h5>
+      <div class="col-md-5">
+        <ul>
+          <li data-aos="fade-left" data-aos-delay="350">Project Management</li>
+          <li data-aos="fade-left" data-aos-delay="400">Turnkey Solutions</li>
+          <li data-aos="fade-left" data-aos-delay="450">Mechanical Utility Energy Audits</li>
+          <li data-aos="fade-left" data-aos-delay="500">Factory Moves</li>
+        </ul>
       </div>
     </div>
-    <br>
-    <a href="services.html" class="blue-link">See More Services</a>
   </div>
 </div>
+<div id="about-us" class="about-us section blue-bg">
+  <div class="container">
+    <h1 data-aos="zoom-in">About Us</h1>
+    <p class="text-center">We are a young, dynamic and professional Engineering Company with a wealth of
+      experience, who renders high quality and cost-effective solutions and service to our clients.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about-pic"></div>
+        <p class="about-text">Jacques Verwey (Pr Cert Eng), a registered Professional Engineer (Pr Eng) as well as a Certificated Engineer
+          (Cert Eng – GCC), is the founder and owner of Jaclin Engineering (Pty) Limited.  He spent the first 25 years of
+          his Mechanical Engineering career in the textile industry as Plant Engineer and Chief Engineer, respectively, for
+          two internationally owned companies.   He designed, built and maintained both woven textile and non-woven textile
+          plants in Cape Town.  His experience over the years encompassed complete plant infrastructure systems including steam,
+          high pressure hot water, compressed air, vacuum systems, LPG, HVAC as well as 11kV electrical reticulation systems.<br><br>
 
+          Jacques jointly started a steam trap company in 2008 and was instrumental in developing a range of unique steam
+          traps. Having designed, built, run and maintained boiler and steam plants for 25 years, Jacques has extensive “hands-on”
+          experience with steam systems and steam trapping.  He enjoys steam system design, improvements, as well as troubleshooting.<br><br>
+
+          Jacques broke away from his previous company in 2016, together with his colleague Byron Cupido, and decided to
+          broaden their customer base by using their more than 40 years of joint hands-on experience in industry and factory
+          utilities.  Jaclin Engineering offers industry a variety of specialised mechanical products and professional services.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="map">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.5518088001177!2d18.608596314904055!3d-33.9011949806473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5a7bc298b4e7%3A0xb946e8d21ef24b16!2sJaclin+Engineering!5e0!3m2!1sen!2sza!4v1509613747917" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
-
 <div id="contact" class="contact section blue-bg">
   <div class="container">
     <h1><span class="bold-header">Contact Us</span></h1>
@@ -188,7 +270,6 @@
     </div>
   </div>
 </div>
-
 <footer class="white-bg">
   <span class="copy-right">Copyright &copy;2017 Jaclin Engineering</span>
 
@@ -197,6 +278,5 @@
     <li><a href="">Privacy Policy</a></li>
   </ul>
 </footer>
-
 </body>
 </html>
