@@ -6820,7 +6820,19 @@ a.blue-link {
   background: #f7f7f7 url(../images/jacques-verwey.jpg) bottom center;
   background-size: cover;
 }
+#about-us .about-name {
+  color: #1B2250;
+  margin-bottom: 3rem;
+}
+#about-us .about-name span {
+  display: block;
+  font-size: 14px;
+  padding-top: 12px;
+}
 #about-us p.about-text {
+  width: 100%;
+  max-width: 450px;
+  margin: auto;
   line-height: 22px;
   text-align: justify;
 }
@@ -6902,13 +6914,11 @@ a.blue-link {
   margin-bottom: 30px;
 }
 .products h1,
-.contact h1,
-.about-us h1 {
+.contact h1 {
   color: #fff;
 }
 .products p,
-.contact p,
-.about-us p {
+.contact p {
   color: #fff;
 }
 .d-flex {
@@ -6952,29 +6962,25 @@ a.blue-link {
   height: 100px;
   text-align: center;
   vertical-align: middle;
+  background-size: 50%;
 }
 .product-block.blue-border {
   border: 1px solid #1B2250;
 }
 .product-block.steam-valve {
   background: url(../images/products/steam-valve-logo.png) no-repeat center center;
-  background-size: 80%;
 }
 .product-block.miyawaki {
   background: url(../images/products/miyawaki-blue.png) no-repeat center center;
-  background-size: 80%;
 }
 .product-block.atam {
   background: url(../images/products/atam-blue.png) no-repeat center center;
-  background-size: 80%;
 }
 .product-block.deca {
   background: url(../images/products/deca-blue.png) no-repeat center center;
-  background-size: 80%;
 }
 .product-block.jk {
   background: url(../images/products/jk-blue.png) no-repeat center center;
-  background-size: 80%;
 }
 .product-block.miyawaki-blue {
   background: url(../images/products/miyawaki-blue.png) no-repeat center center;

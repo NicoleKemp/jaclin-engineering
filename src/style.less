@@ -100,8 +100,20 @@ a {
 		background: #f7f7f7 url(../images/jacques-verwey.jpg) bottom center;
 		background-size: cover;
 	}
+	.about-name {
+		color: @brand-primary;
+		margin-bottom: 3rem;
+		span {
+			display: block;
+			font-size: 14px;
+			padding-top: 12px;
+		}
+	}
 	p {
 		&.about-text {
+			width: 100%;
+			max-width: 450px;
+			margin: auto;
 			line-height: 22px;
 			text-align: justify;
 		}
@@ -110,12 +122,7 @@ a {
 .home-page-bg {
 	background: url(../images/home-bg.png) fixed no-repeat center;
 	background-size: cover;
-	//margin-top: -(@navbar-height + 22px);
 	height: 100vh;
-	//z-index: 0;
-	//@media (max-width: @screen-xs-max) {
-	//	margin-top: -70px;
-	//}
 	.intro {
 		color: #fff;
 		font-size: 36px;
@@ -187,7 +194,7 @@ a {
 		margin-bottom: 30px;
 	}
 }
-.products, .contact, .about-us {
+.products, .contact {
 	h1 { color: #fff;}
 	p { color: #fff;}
 }
@@ -232,30 +239,15 @@ a {
 		height: 100px;
 		text-align: center;
 		vertical-align: middle;
-		//cursor: pointer;
+		background-size: 50%;
 		&.blue-border { border: 1px solid @brand-primary;}
 
 	//Home page products
-		&.steam-valve {
-			background: url(../images/products/steam-valve-logo.png) no-repeat center center;
-			background-size: 80%;
-		}
-		&.miyawaki {
-			background: url(../images/products/miyawaki-blue.png) no-repeat center center;
-			background-size: 80%;
-		}
-		&.atam {
-			background: url(../images/products/atam-blue.png) no-repeat center center;
-			background-size: 80%;
-		}
-		&.deca {
-			background: url(../images/products/deca-blue.png) no-repeat center center;
-			background-size: 80%;
-		}
-		&.jk {
-			background: url(../images/products/jk-blue.png) no-repeat center center;
-			background-size: 80%;
-		}
+		&.steam-valve { background: url(../images/products/steam-valve-logo.png) no-repeat center center;}
+		&.miyawaki { background: url(../images/products/miyawaki-blue.png) no-repeat center center;}
+		&.atam { background: url(../images/products/atam-blue.png) no-repeat center center;}
+		&.deca { background: url(../images/products/deca-blue.png) no-repeat center center;}
+		&.jk { background: url(../images/products/jk-blue.png) no-repeat center center;}
 
 	//Product Page
 		&.miyawaki-blue {
