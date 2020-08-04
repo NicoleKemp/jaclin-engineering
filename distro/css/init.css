@@ -6725,6 +6725,7 @@ button.close {
 body {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 a.white-link {
   color: #fff;
@@ -6753,11 +6754,25 @@ a.blue-link {
 .navbar .navbar-nav li a.active {
   font-weight: 700;
 }
+.navbar .nav-tabs {
+  border: none;
+}
+.navbar .nav-tabs > li.active > a {
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+}
+.navbar .nav-tabs li a:hover {
+  border: 0;
+}
 .navbar.navbar-white {
   background: #fff;
   margin-bottom: 0;
 }
 .navbar.navbar-white.affix-top .navbar-nav li a {
+  color: #1B2250;
+}
+.navbar.navbar-white.affix-top .nav-tabs li a {
   color: #1B2250;
 }
 .navbar.navbar-white.affix-top .navbar-brand {
@@ -6843,9 +6858,10 @@ a.blue-link {
   text-align: justify;
 }
 .home-page-bg {
-  background: url(../images/home-bg.png) fixed no-repeat center;
+  background: url(../images/home-bg.jpg) fixed no-repeat center;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 .home-page-bg .intro {
   color: #fff;
