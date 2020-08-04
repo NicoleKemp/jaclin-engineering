@@ -6817,7 +6817,13 @@ a.blue-link {
   border-radius: 200px;
   margin: 2rem auto;
   overflow: hidden;
+}
+#about-us .about-pic.jacques {
   background: #f7f7f7 url(../images/jacques-verwey.jpg) bottom center;
+  background-size: cover;
+}
+#about-us .about-pic.byron {
+  background: #f7f7f7 url(../images/byron.jpg) center;
   background-size: cover;
 }
 #about-us .about-name {
