@@ -1,6 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 
 a {
@@ -29,11 +30,23 @@ a {
 			}
 		}
 	}
+	.nav-tabs {
+		border: none;
+		> li.active > a {
+			border: 0;
+			color: #fff;
+			font-weight: bold;
+		}
+		li a:hover {
+			border: 0;
+		}
+	}
 	&.navbar-white {
 		background: #fff;
 		margin-bottom: 0;
 		&.affix-top {
 			.navbar-nav li a { color: @brand-primary;}
+			.nav-tabs li a { color: @brand-primary;}
 			.navbar-brand {
 				background: url(../images/logo-colour.png) no-repeat;
 				background-size: contain;
@@ -126,9 +139,10 @@ a {
 	}
 } 
 .home-page-bg {
-	background: url(../images/home-bg.png) fixed no-repeat center;
+	background: url(../images/home-bg.jpg) fixed no-repeat center;
 	background-size: cover;
 	height: 100vh;
+	position: relative;
 	.intro {
 		color: #fff;
 		font-size: 36px;
