@@ -6762,6 +6762,7 @@ a.blue-link {
 .navbar .nav-tabs a.active {
   border: 0;
   font-weight: 700;
+  color: #1B2250;
 }
 .navbar.navbar-white {
   background: #fff;
@@ -6873,8 +6874,13 @@ a.blue-link {
   left: 0;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) !important;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .home-page-bg .intro {
+    font-size: 25px;
+  }
 }
 .home-page-bg .page-down {
   position: absolute;
@@ -7073,6 +7079,7 @@ a.blue-link {
 .services ul li {
   list-style-type: none;
   line-height: 30px;
+  font-size: 16px;
 }
 .services ul li:before {
   content: '';
@@ -7100,6 +7107,11 @@ a.blue-link {
   color: #1B2250;
   font-size: 20px;
   font-weight: bold;
+}
+@media (max-width: 767px) {
+  .services .row {
+    margin: 0;
+  }
 }
 .map {
   position: relative;
@@ -7168,6 +7180,7 @@ footer ul li + li {
 @media (max-width: 767px) {
   footer {
     padding-bottom: 20px;
+    height: 60px;
   }
   footer ul {
     float: none;

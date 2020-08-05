@@ -150,8 +150,11 @@ a {
 		left: 0;
 		right: 0;
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translateY(-50%) !important;
 		font-weight: 700;
+		@media (max-width: @screen-xs-max) {
+			font-size: 25px;
+		}
 	}
 	.page-down {
 		position: absolute;
@@ -337,6 +340,7 @@ a {
 		li {
 			list-style-type: none;
             line-height: 30px;
+			font-size: 16px;
 			&:before {
 				content: '';
 				display: inline-block;
@@ -361,6 +365,9 @@ a {
 		color: @brand-primary;
 		font-size: 20px;
 		font-weight: bold;
+	}
+	@media (max-width: @screen-xs-max) {
+		.row { margin: 0;}
 	}
 }
 .map {
@@ -427,6 +434,7 @@ footer {
 	}
 	@media (max-width: @screen-xs-max) {
 		padding-bottom: 20px;
+		height: 60px;
 		ul {
 			float: none;
 			margin-top: 30px;
