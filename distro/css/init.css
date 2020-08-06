@@ -7080,6 +7080,7 @@ a.blue-link {
   list-style-type: none;
   line-height: 30px;
   font-size: 16px;
+  padding-left: 30px;
 }
 .services ul li:before {
   content: '';
@@ -7090,6 +7091,9 @@ a.blue-link {
   height: 20px;
   vertical-align: middle;
   margin-right: 5px;
+  position: absolute;
+  left: 0;
+  top: 3px;
 }
 .services .services-row {
   width: 100%;
@@ -7111,6 +7115,9 @@ a.blue-link {
 @media (max-width: 767px) {
   .services .row {
     margin: 0;
+  }
+  .services ul.mobile-spacing {
+    margin-top: -10px;
   }
 }
 .map {

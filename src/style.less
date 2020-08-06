@@ -341,6 +341,7 @@ a {
 			list-style-type: none;
             line-height: 30px;
 			font-size: 16px;
+			padding-left: 30px;
 			&:before {
 				content: '';
 				display: inline-block;
@@ -350,6 +351,9 @@ a {
 				height: 20px;
 				vertical-align: middle;
                 margin-right: 5px;
+				position: absolute;
+				left: 0;
+				top: 3px;
 			}
 		}
 	}
@@ -368,6 +372,7 @@ a {
 	}
 	@media (max-width: @screen-xs-max) {
 		.row { margin: 0;}
+		ul.mobile-spacing { margin-top: -10px;}
 	}
 }
 .map {
