@@ -178,13 +178,14 @@
 </div>
 
 <footer class="white-bg">
-  <span class="copy-right">Copyright &copy;2017 Jaclin Engineering</span>
-
-<!--  <ul>-->
-<!--    <li><a href="">Terms &amp; Conditions</a></li>-->
-<!--    <li><a href="">Privacy Policy</a></li>-->
-<!--  </ul>-->
+  <div class="copy-right">Copyright &copy;<span id="year"></span> Jaclin Engineering</div>
+  <div class="small">Designed &amp; Developed by <a href="http://www.nicoleabbott.co.za" target="_blank">Nicole Abbott</a></div>
 </footer>
+
+<script>
+    let year = new Date().getFullYear();
+    document.getElementById('year').innerHTML = year;
+</script>
 
 </body>
 </html>

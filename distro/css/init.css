@@ -7153,6 +7153,9 @@ a.blue-link {
   padding-top: 5px;
 }
 @media (max-width: 767px) {
+  .contact .contact-row {
+    text-align: center;
+  }
   .contact .contact-row .col-sm-3 + .col-sm-3 {
     margin-top: 30px;
   }
@@ -7165,15 +7168,12 @@ a.blue-link {
   color: #1B2250;
 }
 footer {
-  padding: 20px 20px 40px 20px;
+  padding: 1rem;
   text-align: center;
   color: #1B2250;
 }
 footer .copy-right {
   font-weight: 700;
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 footer ul {
   float: right;
@@ -7318,10 +7318,69 @@ footer ul li + li {
   background: url(../images/gallery/compressor-revamp/compressor_revamp_1.jpg) center no-repeat;
   background-size: cover;
 }
+.article-image.gallery-2021-06 {
+  background: url(../images/gallery/2021/06_warm_water/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2021-05 {
+  background: url(../images/gallery/2021/05_compressed_air/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2021-04 {
+  background: url(../images/gallery/2021/04_chimney_stack/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2021-03 {
+  background: url(../images/gallery/2021/03_flexible_conveyor/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2021-02 {
+  background: url(../images/gallery/2021/02_compressed_air/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2021-01 {
+  background: url(../images/gallery/2021/01_compressor_station/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2020-08 {
+  background: url(../images/gallery/2020/08_chilled_water/00.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2020-07 {
+  background: url(../images/gallery/2020/07_compressor_station/00.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2020-06 {
+  background: url(../images/gallery/2020/06_service_retort/00.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2020-05 {
+  background: url(../images/gallery/2020/05_conversion_retort/00.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2020-04 {
+  background: url(../images/gallery/2020/04_generator_enclosure/00.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2020-03 {
+  background: url(../images/gallery/2020/03_retort_cooling/00.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2020-02 {
+  background: url(../images/gallery/2020/02_retort_replacement/00.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2020-01 {
+  background: url(../images/gallery/2020/01_compressor_station/00.jpg) center no-repeat;
+  background-size: cover;
+}
 .article-list {
   width: 100%;
   max-width: 800px;
   margin: auto;
+}
+.article-list .tab-content .tab-pane .row {
+  margin-top: 4rem;
 }
 .thumbnail-hidden {
   display: none;

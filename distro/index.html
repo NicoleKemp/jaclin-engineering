@@ -31,7 +31,7 @@
 
     gtag('config', 'UA-110068516-1');
   </script>
-  
+
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/aos/dist/aos.js"></script>
@@ -248,7 +248,13 @@
   </div>
 </div>
 <footer class="white-bg">
-  <span class="copy-right">Copyright &copy;2017 Jaclin Engineering</span>
+  <div class="copy-right">Copyright &copy;<span id="year"></span> Jaclin Engineering</div>
+  <div class="small">Designed &amp; Developed by <a href="http://www.nicoleabbott.co.za" target="_blank">Nicole Abbott</a></div>
 </footer>
+
+<script>
+  let year = new Date().getFullYear();
+  document.getElementById('year').innerHTML = year;
+</script>
 </body>
 </html>
