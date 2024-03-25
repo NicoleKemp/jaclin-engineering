@@ -19,6 +19,60 @@ a {
 .grey-bg { background: #F7F7F7;}
 .blue-bg { background: @brand-primary;}
 
+.bbee-badge {
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	background: #1B2250;
+	color: #ffffff;
+	text-transform: uppercase;
+	position: fixed;
+	left: 20px;
+	bottom: 30px;
+	z-index: 1000;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-weight: 100;
+	line-height: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	display: none;
+	&.text-danger { color: #DA3235;}
+	&:after {
+		content: '';
+		display: block;
+		border: 1px solid #fff;
+		border-radius: 150px;
+		height: 145px;
+		width: 145px;
+		position: absolute;
+	}
+	.stacked {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.text {
+			width: 76px;
+			text-align: left;
+			font-size: 20px;
+			line-height: 22px;
+			font-weight: 900;
+			.level { font-size: 25px;}
+		}
+		.two {
+			font-size: 50px;
+			font-weight: 900;
+		}
+	}
+}
+
+@media (min-width: @screen-sm-min) {
+	.bbee-badge {
+		display: flex;
+	}
+}
+
 //Navbar
 .navbar {
 	z-index: 1;
@@ -210,6 +264,16 @@ a {
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 30px;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__block {
+		min-width: 160px;
+		min-height: 100px;
 	}
 }
 .products, .contact {
@@ -405,10 +469,24 @@ a {
 			text-decoration: none;
 			+ a { padding-top: 5px;}
 		}
+		hr {
+			&.mobile {
+				display: none;
+				@media (max-width: @screen-xs-max) {
+					display: block;
+				}
+			}
+		}
 		@media (max-width: @screen-xs-max) {
-      text-align: center;
+			text-align: center;
 			.col-sm-3 + .col-sm-3 { margin-top: 30px;}
 		}
+	}
+	.bbee-badge {
+		position: static;
+		margin: 5rem auto 0 auto;
+		display: flex;
+		@media (min-width: @screen-sm-min) { display: none;}
 	}
 }
 
@@ -432,6 +510,7 @@ footer {
 	a {
 		text-decoration: none;
 		font-weight: 700;
+		+ a { margin-left: 1rem;}
 	}
 	ul {
 		float: right;
@@ -571,23 +650,103 @@ footer {
 		background: url(../images/gallery/compressor-revamp/compressor_revamp_1.jpg) center no-repeat;
 		background-size: cover;
 	}
-  &.gallery-2021-06 {
-    background: url(../images/gallery/2021/06_warm_water/01.jpg) center no-repeat;
-    background-size: cover;
-  }
-  &.gallery-2021-05 {
-    background: url(../images/gallery/2021/05_compressed_air/01.jpg) center no-repeat;
-    background-size: cover;
-  }
-  &.gallery-2021-04 {
-    background: url(../images/gallery/2021/04_chimney_stack/01.jpg) center no-repeat;
-    background-size: cover;
-  }
-  &.gallery-2021-03 {
-    background: url(../images/gallery/2021/03_flexible_conveyor/01.jpg) center no-repeat;
-    background-size: cover;
-  }
-  &.gallery-2021-02 {
+	&.gallery-2022-01 {
+		background: url(../images/gallery/2022/01_cape_flexible_converters/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-02 {
+		background: url(../images/gallery/2022/02_tiger_brands/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-03 {
+		background: url(../images/gallery/2022/03_albany_bakery/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-04 {
+		background: url(../images/gallery/2022/04_tfg_epping_phase_2/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-05 {
+		background: url(../images/gallery/2022/05_penpack/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-06 {
+		background: url(../images/gallery/2022/06_tfg_durban_phase_2_3/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-07 {
+		background: url(../images/gallery/2022/07_corruseal/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-08 {
+		background: url(../images/gallery/2022/08_tfg_epping_phase_3/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-09 {
+		background: url(../images/gallery/2022/09_paul_cluver/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-10 {
+		background: url(../images/gallery/2022/10_tygerberg_laundry_phase_2/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-11 {
+		background: url(../images/gallery/2022/11_tfg_epping_phase_4/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-15 {
+		background: url(../images/gallery/2021/15_sheraton/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-14 {
+		background: url(../images/gallery/2021/14_aspen/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-13 {
+		background: url(../images/gallery/2021/13_tfg_durban_phase_1/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-12 {
+		background: url(../images/gallery/2021/12_tfg_maitland/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-11 {
+		background: url(../images/gallery/2021/11_tygerberg_laundry_phase_1/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-10 {
+		background: url(../images/gallery/2021/10_tygerberg_laundry/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-09 {
+		background: url(../images/gallery/2021/09_cooling_recycle_system/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-08 {
+		background: url(../images/gallery/2021/08_tfg_caledon/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-07 {
+		background: url(../images/gallery/2021/07_tfg_epping/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-06 {
+	background: url(../images/gallery/2021/06_warm_water/01.jpg) center no-repeat;
+	background-size: cover;
+	}
+	&.gallery-2021-05 {
+	background: url(../images/gallery/2021/05_compressed_air/01.jpg) center no-repeat;
+	background-size: cover;
+	}
+	&.gallery-2021-04 {
+	background: url(../images/gallery/2021/04_chimney_stack/01.jpg) center no-repeat;
+	background-size: cover;
+	}
+	&.gallery-2021-03 {
+	background: url(../images/gallery/2021/03_flexible_conveyor/01.jpg) center no-repeat;
+	background-size: cover;
+	}
+	&.gallery-2021-02 {
     background: url(../images/gallery/2021/02_compressed_air/01.jpg) center no-repeat;
     background-size: cover;
   }

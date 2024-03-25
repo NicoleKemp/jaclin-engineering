@@ -38,6 +38,19 @@
   <script src="js/main.js"></script>
 </head>
 <body data-spy="scroll" data-target="bs-example-navbar-collapse-1">
+
+<div class="bbee-badge">
+  <div>A PROUD</div>
+  <div class="stacked">
+    <div class="text">
+      <div class="text-danger">B-BBEE</div>
+      <div class="level">LEVEL</div>
+    </div>
+    <div><div class="two">2</div></div>
+  </div>
+  <div>CONTRIBUTOR</div>
+</div>
+
 <nav class="navbar navbar-default navbar-fixed-top" data-spy="affix" data-offset-top="60">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -77,28 +90,32 @@
   <div class="container">
     <h1 data-aos="zoom-in">Specialists in Mechanical Utilities</h1>
     <p>Our expertise includes, design, construction, maintenance, troubleshooting and energy optimization of the following mechanical utilities:</p>
-    <div class="row">
-      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="200">
+    <div class="specialists__wrapper">
+      <div class="specialists__block" data-aos="flip-left" data-aos-delay="200">
         <img src="images/utilities/steam.svg" alt="Steam">
         <h4>Steam</h4>
       </div>
-      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="300">
+      <div class="specialists__block" data-aos="flip-left" data-aos-delay="300">
         <img src="images/utilities/compressed-air.svg" alt="Compressed Air">
         <h4>Compressed Air</h4>
       </div>
-      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="400">
+      <div class="specialists__block" data-aos="flip-left" data-aos-delay="300">
+        <img src="images/utilities/vacuum.svg" alt="Vacuum System">
+        <h4>Vacuum Systems</h4>
+      </div>
+      <div class="specialists__block" data-aos="flip-left" data-aos-delay="400">
         <img src="images/utilities/chilled-water.svg" alt="Chilled Water">
         <h4>Chilled Water</h4>
       </div>
-      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="500">
+      <div class="specialists__block" data-aos="flip-left" data-aos-delay="500">
         <img src="images/utilities/warm-water.svg" alt="Warm Water">
         <h4>Warm Water</h4>
       </div>
-      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="600">
+      <div class="specialists__block" data-aos="flip-left" data-aos-delay="600">
         <img src="images/utilities/themal-oil.svg" alt="Thermal Oil">
         <h4>Thermal Oil</h4>
       </div>
-      <div class="col-sm-2" data-aos="flip-left" data-aos-delay="700">
+      <div class="specialists__block" data-aos="flip-left" data-aos-delay="700">
         <img src="images/utilities/general.svg" alt="General">
         <h4>General</h4>
       </div>
@@ -216,7 +233,6 @@
   <div class="container">
     <h1><span class="bold-header">Contact Us</span></h1>
     <br>
-
     <div class="contact-row row">
       <div class="col-sm-3">
         <h5>General Enquiries:</h5>
@@ -228,6 +244,12 @@
         <a class="white-link" href="mailto:accounts@jaclin.co.za">accounts@jaclin.co.za</a>
         <a class="white-link">+27 (0)21 949 8597</a>
         <a class="white-link">+27 (0)72 420 7993</a>
+        <hr>
+        <div class="mt-2">
+          <label>Marilise Clark</label>
+          <a class="white-link" href="mailto:marilise@jaclin.co.za">marilise@jaclin.co.za</a>
+        </div>
+        <hr class="mobile">
       </div>
       <div class="col-sm-3">
         <h5>Sales &amp; Technical:</h5>
@@ -235,9 +257,12 @@
         <a class="white-link" href="mailto:jacques@jaclin.co.za">jacques@jaclin.co.za</a>
         <a class="white-link">+27 (0)72 655 7049</a>
         <hr>
-        <label>Byron Cupido</label>
-        <a class="white-link" href="mailto:byron@jaclin.co.za">byron@jaclin.co.za</a>
-        <a class="white-link">+27 (0)72 517 3512</a>
+        <div class="mt-2">
+          <label>Byron Cupido</label>
+          <a class="white-link" href="mailto:byron@jaclin.co.za">byron@jaclin.co.za</a>
+          <a class="white-link">+27 (0)72 517 3512</a>
+        </div>
+        <hr class="mobile">
       </div>
       <div class="col-sm-3">
         <h5>Sales:</h5>
@@ -245,10 +270,24 @@
         <a class="white-link">+27 (0)21 949 8597</a>
       </div>
     </div>
+    <div class="bbee-badge">
+      <div>A PROUD</div>
+      <div class="stacked">
+        <div class="text">
+          <div class="text-danger">B-BBEE</div>
+          <div class="level">LEVEL</div>
+        </div>
+        <div><div class="two">2</div></div>
+      </div>
+      <div>CONTRIBUTOR</div>
+    </div>
   </div>
 </div>
 <footer class="white-bg">
-  <div><a href="privacy-policy.pdf" target="_blank">Privacy Policy</a></div>
+  <div>
+    <a href="privacy-policy.pdf" target="_blank">Privacy Policy</a>
+    <a href="paia-manual.pdf" target="_blank">PAIA Manual</a>
+  </div>
   <div class="copy-right">Copyright &copy;<span id="year"></span> Jaclin Engineering</div>
   <div class="small">Designed &amp; Developed by <a href="http://www.nicoleabbott.co.za" target="_blank">Nicole Abbott</a></div>
 </footer>

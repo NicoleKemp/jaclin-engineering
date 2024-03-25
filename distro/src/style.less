@@ -1,0 +1,807 @@
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+a {
+	&.white-link {
+		color: #fff;
+		text-decoration: underline;
+	}
+	&.blue-link {
+		color: @brand-primary;
+		text-decoration: underline;
+	}
+}
+
+.white-bg { background: #fff;}
+.grey-bg { background: #F7F7F7;}
+.blue-bg { background: @brand-primary;}
+
+.bbee-badge {
+	width: 150px;
+	height: 150px;
+	border-radius: 150px;
+	background: @brand-primary;
+	color: #ffffff;
+	text-transform: uppercase;
+	position: fixed;
+	left: 20px;
+	bottom: 30px;
+	z-index: 1000;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-weight: 100;
+	line-height: 30px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	display: none;
+	.text-danger { color: @brand-danger;}
+	&:after {
+		content: '';
+		display: block;
+		border: 1px solid #fff;
+		border-radius: 150px;
+		height: 145px;
+		width: 145px;
+		position: absolute;
+
+	}
+	.stacked {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.text {
+			width: 76px;
+			text-align: left;
+			font-size: 20px;
+			line-height: 22px;
+			font-weight: 900;
+			.level { font-size: 25px;}
+		}
+		.two {
+			font-size: 50px;
+			font-weight: 900;
+		}
+	}
+	@media (min-width: @screen-sm-min) { display: flex;}
+}
+
+//Navbar
+.navbar {
+	z-index: 1;
+	.nav-tabs {
+		border: none;
+		li a { margin-right: 0; }
+		> li.active > a {
+			border: 0;
+			color: #fff;
+			font-weight: bold;
+		}
+		li a:hover, a.active {
+			border: 0;
+			font-weight: 700;
+			color: @brand-primary;
+		}
+	}
+	&.navbar-white {
+		background: #fff;
+		margin-bottom: 0;
+		&.affix-top {
+			.navbar-nav li a { color: @brand-primary;}
+			.nav-tabs li a { color: @brand-primary;}
+			.navbar-brand {
+				background: url(../images/logo-colour.png) no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+	&.affix {
+		left: 0;
+		right: 0;
+		top: 0;
+		background: #fff;
+		box-shadow: rgba(0,0,0,0.5) 0 0 20px;
+		.navbar-nav {
+			li {
+				a { color: @brand-primary;}
+			}
+		}
+		.navbar-brand {
+			background: url(../images/logo-colour.png) no-repeat;
+			background-size: contain;
+		}
+	}
+	.navbar-brand {
+		padding: 0;
+		background: url(../images/logo-white.png) no-repeat;
+		background-size: contain;
+		height: 60px;
+		width: 180px;
+		margin-top: 10px;
+		margin-left: 0 !important;
+	}
+	@media (max-width: @screen-xs-max) {
+		min-height: 50px;
+		.navbar-brand {
+			height: 35px;
+			margin-top: 5px;
+			margin-left: 10px !important;
+		}
+		.navbar-toggle {
+			margin-top: 7px;
+			margin-bottom: 7px;
+		}
+		&.navbar-white.affix-top {
+			.navbar-nav li a { color: #fff;}
+		}
+		&.affix-top {
+			background: @brand-primary;
+			.navbar-brand {
+				background: url(../images/logo-white.png) no-repeat !important;
+				background-size: contain !important;
+			}
+		}
+		.nav-tabs > li { float: none;}
+	}
+}
+
+//Home
+#about-us {
+	.about-pic {
+		width: 200px;
+		height: 200px;
+		border-radius: 200px;
+		margin: 2rem auto;
+		overflow: hidden;
+		&.jacques {
+			background: #f7f7f7 url(../images/jacques-verwey.jpg) bottom center;
+			background-size: cover;
+		}
+		&.byron {
+			background: #f7f7f7 url(../images/byron.jpg) center;
+			background-size: cover;
+		}
+	}
+	.about-name {
+		color: @brand-primary;
+		margin-bottom: 3rem;
+		span {
+			display: block;
+			font-size: 14px;
+			padding-top: 12px;
+		}
+	}
+	p {
+		&.about-text {
+			width: 100%;
+			max-width: 450px;
+			margin: auto;
+			line-height: 22px;
+			text-align: justify;
+		}
+	}
+}
+.home-page-bg {
+	background: url(../images/home-bg.jpg) fixed no-repeat center;
+	background-size: cover;
+	height: 100vh;
+	position: relative;
+	.intro {
+		color: #fff;
+		font-size: 36px;
+		width: 100%;
+		max-width: 950px;
+		margin: auto;
+		text-align: center;
+		text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%) !important;
+		font-weight: 700;
+		@media (max-width: @screen-xs-max) {
+			font-size: 25px;
+		}
+	}
+	.page-down {
+		position: absolute;
+		bottom: 30px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		cursor: pointer;
+		animation: bounce 1s linear infinite;
+		img {
+			width: 45px;
+			position: relative;
+		}
+		@keyframes bounce {
+			0% {
+				transform:translateY(0);
+				padding-bottom: 5px;
+			}
+			50% { transform:translateY(-20%);}
+			100% {
+				transform:translateY(0);
+				padding-bottom: 5px;
+			}
+		}
+	}
+}
+.section {
+	text-align: center;
+	padding: 80px 0;
+	h1 {
+		text-transform: uppercase;
+		color: @brand-primary;
+	}
+	p {
+		color: @gray-dark;
+		font-size: 15px;
+		width: 100%;
+		max-width: 820px;
+		margin: auto;
+		line-height: 30px;
+	}
+}
+.specialists {
+	img {
+		height: 60px;
+		margin-bottom: 1rem;
+	}
+	h4 { color: @brand-primary;}
+	p {
+		width: 100%;
+		max-width: 500px !important;
+		line-height: normal !important;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+	}
+	&__wrapper {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+	&__block {
+		min-width: 160px;
+		min-height: 100px;
+	}
+}
+.products, .contact {
+	h1 { color: #fff;}
+	p { color: #fff;}
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 950px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.block-white {
+	width: 100%;
+    max-width: 260px;
+	height: 150px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	border-radius: 5px;
+    margin: 1rem;
+    padding: 1rem;
+	h4 {
+		font-weight: bold;
+		text-transform: uppercase;
+		color: @brand-primary;
+	}
+	.badge {
+		font-size: 16px;
+		margin: .2rem;
+	}
+}
+.product-block {
+		border: 1px solid #fff;
+		border-radius: 5px;
+		padding: 15px;
+		display: inline-block;
+		width: 100%;
+		max-width: 180px;
+		margin: 0 15px 30px 15px;
+		height: 100px;
+		text-align: center;
+		vertical-align: middle;
+		background-size: 50%;
+		&.blue-border { border: 1px solid @brand-primary;}
+
+	//Home page products
+		&.steam-valve { background: url(../images/products/steam-valve-logo.png) no-repeat center center;}
+		&.miyawaki { background: url(../images/products/miyawaki-blue.png) no-repeat center center;}
+		&.atam { background: url(../images/products/atam-blue.png) no-repeat center center;}
+		&.deca { background: url(../images/products/deca-blue.png) no-repeat center center;}
+		&.jk { background: url(../images/products/jk-blue.png) no-repeat center center;}
+
+	//Product Page
+		&.miyawaki-blue {
+			background: url(../images/products/miyawaki-blue.png) no-repeat center center;
+			background-size: auto;
+			&:hover {
+				background: url(../images/products/miyawaki.png) no-repeat center center;
+				background-size: auto;
+			}
+		}
+		&.atam-blue {
+			background: url(../images/products/atam-blue.png) no-repeat center center;
+			background-size: auto;
+			&:hover {
+				background: url(../images/products/atam.png) no-repeat center center;
+				background-size: auto;
+			}
+		}
+		&.deca-blue {
+			background: url(../images/products/deca-blue.png) no-repeat center center;
+			background-size: auto;
+			&:hover {
+				background: url(../images/products/deca.png) no-repeat center center;
+				background-size: auto;
+			}
+		}
+		&.jk-blue {
+			background: url(../images/products/jk-blue.png) no-repeat center center;
+			background-size: auto;
+			&:hover {
+				background: url(../images/products/jk.png) no-repeat center center;
+				background-size: auto;
+			}
+		}
+		&.armaturen-blue {
+			background: url(../images/products/armaturen-blue.png) no-repeat center center;
+			background-size: auto;
+			&:hover {
+				background: url(../images/products/armaturen.png) no-repeat center center;
+				background-size: auto;
+			}
+		}
+		&.mega-blue {
+			background: url(../images/products/mega-blue.png) no-repeat center center;
+			background-size: auto;
+			&:hover {
+				background: url(../images/products/mega.png) no-repeat center center;
+				background-size: auto;
+			}
+		}
+		&.mipel-blue {
+			background: url(../images/products/mipel-blue.png) no-repeat center center;
+			background-size: auto;
+			&:hover {
+				background: url(../images/products/mipel.png) no-repeat center center;
+				background-size: auto;
+			}
+		}
+		&.verimex-blue {
+			background: url(../images/products/varimex-blue.png) no-repeat center center;
+			background-size: auto;
+			&:hover {
+				background: url(../images/products/varimex.png) no-repeat center center;
+				background-size: auto;
+			}
+		}
+	}
+.services {
+	ul {
+		text-align: left;
+        padding: 0;
+		li {
+			list-style-type: none;
+            line-height: 30px;
+			font-size: 16px;
+			padding-left: 30px;
+			&:before {
+				content: '';
+				display: inline-block;
+				background: url("../images/ic-bullet.svg") no-repeat center;
+                background-size: contain;
+				width: 20px;
+				height: 20px;
+				vertical-align: middle;
+                margin-right: 5px;
+				position: absolute;
+				left: 0;
+				top: 3px;
+			}
+		}
+	}
+	.services-row {
+		width: 100%;
+		max-width: 900px;
+		margin: auto;
+		padding-top: 15px;
+		h5 { color: @brand-primary;}
+		img { vertical-align: bottom;}
+	}
+	.service-header {
+		color: @brand-primary;
+		font-size: 20px;
+		font-weight: bold;
+	}
+	@media (max-width: @screen-xs-max) {
+		.row { margin: 0;}
+		ul.mobile-spacing { margin-top: -10px;}
+	}
+}
+.map {
+	position: relative;
+	height: 450px;
+	iframe {
+		position: absolute;
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+}
+.contact {
+	.contact-row {
+		width: 100%;
+		max-width: 900px;
+		margin: auto;
+		text-align: left;
+		hr.mobile { display: none;}
+		h5 {
+			color: #fff;
+			font-weight: 700;
+			font-style: italic;
+		}
+		label {
+			color: #fff;
+			font-weight: 500;
+		}
+		a {
+			display: block;
+			text-decoration: none;
+			+ a { padding-top: 5px;}
+		}
+		@media (max-width: @screen-xs-max) {
+      		text-align: center;
+			.mt-2 { margin-top: 1rem;}
+			hr {
+				display: none;
+				&.mobile { display: block;}
+			}
+			.col-sm-3 + .col-sm-3 { margin-top: 30px;}
+		}
+	}
+	.bbee-badge {
+		position: static;
+		margin: 5rem auto 0 auto;
+		display: flex;
+		@media (min-width: @screen-sm-min) {
+			display: none;
+		}
+	}
+}
+
+.product-images {
+	img {
+		border: 2px solid @brand-primary;
+		border-radius: 20px;
+	}
+	label { color: @brand-primary;}
+}
+
+//Footer
+footer {
+	padding: 1rem;
+	text-align: center;
+	color: @brand-primary;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.copy-right {font-weight: 700;}
+	a {
+		text-decoration: none;
+		font-weight: 700;
+	}
+	a+a { margin-left: 1rem;}
+	ul {
+		float: right;
+		li {
+			display: inline-block;
+			+ li { padding-left: 15px;}
+		}
+	}
+	@media (max-width: @screen-xs-max) {
+		padding-bottom: 20px;
+		height: 60px;
+		ul {
+			float: none;
+			margin-top: 30px;
+			padding-left: 0;
+			li {
+				display: block;
+				+ li { padding: 0;}
+			}
+		}
+	}
+}
+
+.article-image {
+	width: 100%;
+	max-width: 150px;
+	height: 150px;
+	background: @brand-primary;
+	border-radius: 10px;
+	border: 1px solid @brand-primary;
+	position: relative;
+	cursor: pointer;
+	&:before {
+		content: '';
+		width: 35px;
+		height: 35px;
+		background: url(../images/gallery/ic-gallery.svg) center no-repeat;
+		background-size: contain;
+		display: block;
+		position: absolute;
+		bottom: 10px;
+		right: 10px;
+	}
+	&.clothing-factory {
+		background: url(../images/gallery/clothing-factory/house-1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.boschendal {
+		background: url(../images/gallery/boschendal-winery/bosch-2.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.colibri {
+		background: url(../images/gallery/colibri/colibri-1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.romatex {
+		background: url(../images/gallery/romatex/1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.pe {
+		background: url(../images/gallery/pe/1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.hotwell {
+		background: url(../images/gallery/hotwell/hotwell-2.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.steam-header {
+		background: url(../images/gallery/steam-header/prom-1.jpg) center no-repeat;
+		background-size: cover;
+	}
+  	&.chilled-water-system {
+		background: url(../images/gallery/chilled-water-system/chilled_0.jpg) center no-repeat;
+		background-size: cover;
+	}
+  	&.compressor-station {
+		background: url(../images/gallery/compressor-station/compressor_0.jpg) center no-repeat;
+		background-size: cover;
+	}
+  	&.cooling-water-system {
+		background: url(../images/gallery/cooling-water-system/cooling_0.jpg) center no-repeat;
+		background-size: cover;
+	}
+  	&.water-storage {
+		background: url(../images/gallery/water-storage/water_0.jpg) center no-repeat;
+		background-size: cover;
+	}
+  	&.corrugated {
+		background: url(../images/gallery/corrugated/currogated_0.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.boiler-move {
+		background: url(../images/gallery/boiler-move-1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.new-compressor {
+		background: url(../images/gallery/new-compressor-room-1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.chilled-water {
+		background: url(../images/gallery/chilled-water-1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.hot-oil {
+		background: url(../images/gallery/hot-oil-vapour-1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.basket-loader {
+		background: url(../images/gallery/basket-loader-1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.chimney-stack {
+		background: url(../images/gallery/boiler-chimney-1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.central-vaccum {
+		background: url(../images/gallery/central-vaccum/central-vaccum-1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.boiler-installation {
+		background: url(../images/gallery/boiler-installation/boiler_1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.chilled-water-winery {
+		background: url(../images/gallery/carmen-wines/carmen_1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.darling-wines {
+		background: url(../images/gallery/darling-wines/darling_wines_1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.franschhoek {
+		background: url(../images/gallery/franschhoek/franschhoek_1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.compressor-revamp {
+		background: url(../images/gallery/compressor-revamp/compressor_revamp_1.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-01 {
+		background: url(../images/gallery/2022/01_cape_flexible_converters/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-02 {
+		background: url(../images/gallery/2022/02_tiger_brands/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-03 {
+		background: url(../images/gallery/2022/03_albany_bakery/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-04 {
+		background: url(../images/gallery/2022/04_tfg_epping_phase_2/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-05 {
+		background: url(../images/gallery/2022/05_penpack/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-06 {
+		background: url(../images/gallery/2022/06_tfg_durban_phase_2_3/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-07 {
+		background: url(../images/gallery/2022/07_corruseal/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-08 {
+		background: url(../images/gallery/2022/08_tfg_epping_phase_3/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-09 {
+		background: url(../images/gallery/2022/09_paul_cluver/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-10 {
+		background: url(../images/gallery/2022/10_tygerberg_laundry_phase_2/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2022-11 {
+		background: url(../images/gallery/2022/11_tfg_epping_phase_4/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+
+	&.gallery-2021-15 {
+		background: url(../images/gallery/2021/15_sheraton/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-14 {
+		background: url(../images/gallery/2021/14_aspen/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-13 {
+		background: url(../images/gallery/2021/13_tfg_durban_phase_1/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-12 {
+		background: url(../images/gallery/2021/12_tfg_maitland/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-11 {
+		background: url(../images/gallery/2021/11_tygerberg_laundry_phase_1/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-10 {
+		background: url(../images/gallery/2021/10_tygerberg_laundry/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-09 {
+		background: url(../images/gallery/2021/09_cooling_recycle_system/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-08 {
+		background: url(../images/gallery/2021/08_tfg_caledon/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-07 {
+		background: url(../images/gallery/2021/07_tfg_epping/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2021-06 {
+	background: url(../images/gallery/2021/06_warm_water/01.jpg) center no-repeat;
+	background-size: cover;
+	}
+	&.gallery-2021-05 {
+	background: url(../images/gallery/2021/05_compressed_air/01.jpg) center no-repeat;
+	background-size: cover;
+	}
+	&.gallery-2021-04 {
+	background: url(../images/gallery/2021/04_chimney_stack/01.jpg) center no-repeat;
+	background-size: cover;
+	}
+	&.gallery-2021-03 {
+	background: url(../images/gallery/2021/03_flexible_conveyor/01.jpg) center no-repeat;
+	background-size: cover;
+	}
+	&.gallery-2021-02 {
+	background: url(../images/gallery/2021/02_compressed_air/01.jpg) center no-repeat;
+	background-size: cover;
+	}
+	&.gallery-2021-01 {
+		background: url(../images/gallery/2021/01_compressor_station/01.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2020-08 {
+		background: url(../images/gallery/2020/08_chilled_water/00.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2020-07 {
+		background: url(../images/gallery/2020/07_compressor_station/00.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2020-06 {
+		background: url(../images/gallery/2020/06_service_retort/00.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2020-05 {
+		background: url(../images/gallery/2020/05_conversion_retort/00.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2020-04 {
+		background: url(../images/gallery/2020/04_generator_enclosure/00.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2020-03 {
+		background: url(../images/gallery/2020/03_retort_cooling/00.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2020-02 {
+		background: url(../images/gallery/2020/02_retort_replacement/00.jpg) center no-repeat;
+		background-size: cover;
+	}
+	&.gallery-2020-01 {
+		background: url(../images/gallery/2020/01_compressor_station/00.jpg) center no-repeat;
+		background-size: cover;
+	}
+
+}
+.article-list {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+	.tab-content .tab-pane .row {
+		margin-top: 4rem;
+	}
+}
+.thumbnail-hidden { display: none;}
+.article-details {
+	text-align: left;
+	h4 { color: @brand-primary;}
+	span { line-height: 40px;}
+	p {
+		color: @gray;
+		margin: 0;
+	}
+}
+
