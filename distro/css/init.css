@@ -7412,6 +7412,42 @@ footer ul li + li {
   background: url(../images/gallery/compressor-revamp/compressor_revamp_1.jpg) center no-repeat;
   background-size: cover;
 }
+.article-image.gallery-2024-01 {
+  background: url(../images/gallery/2024/01_chilled_water_system/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2023-01 {
+  background: url(../images/gallery/2023/01_chimney_repair/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2023-02 {
+  background: url(../images/gallery/2023/02_steam_line_repair/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2023-03 {
+  background: url(../images/gallery/2023/03_paraffin_ring_main/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2023-04 {
+  background: url(../images/gallery/2023/04_steam_pelleter_meadow/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2023-05 {
+  background: url(../images/gallery/2023/05_compressor_room_may/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2023-06 {
+  background: url(../images/gallery/2023/06_compressor_room/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2023-07 {
+  background: url(../images/gallery/2023/07_chilled_water_system/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2023-08 {
+  background: url(../images/gallery/2023/08_hospital_laundry_move/01.jpg) center no-repeat;
+  background-size: cover;
+}
 .article-image.gallery-2022-01 {
   background: url(../images/gallery/2022/01_cape_flexible_converters/01.jpg) center no-repeat;
   background-size: cover;
@@ -7454,6 +7490,42 @@ footer ul li + li {
 }
 .article-image.gallery-2022-11 {
   background: url(../images/gallery/2022/11_tfg_epping_phase_4/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2022-12 {
+  background: url(../images/gallery/2022/12_full_steam_system_audit/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2022-13 {
+  background: url(../images/gallery/2022/13_compressor_room_july_2022/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2022-14 {
+  background: url(../images/gallery/2022/14_compressor_room_aug_2022/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2022-15 {
+  background: url(../images/gallery/2022/15_compressed_air_system/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2022-16 {
+  background: url(../images/gallery/2022/16_warm_water_oct/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2022-17 {
+  background: url(../images/gallery/2022/17_chilled_water_system/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2022-18 {
+  background: url(../images/gallery/2022/18_chilled_water_system/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2022-19 {
+  background: url(../images/gallery/2022/19_equipment_move/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2021-16 {
+  background: url(../images/gallery/2021/16_steam_supply_pelleters/01.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.gallery-2021-15 {
@@ -7550,11 +7622,24 @@ footer ul li + li {
 }
 .article-list {
   width: 100%;
-  max-width: 800px;
-  margin: auto;
+}
+.article-list .nav {
+  margin-top: 4rem;
+}
+.article-list .tab-content {
+  border-left: 1px solid #efefef;
+  padding-left: 3rem;
 }
 .article-list .tab-content .tab-pane .row {
   margin-top: 4rem;
+}
+@media (max-width: 991px) {
+  .article-list .nav {
+    margin-top: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    border-bottom: 1px solid #efefef;
+  }
 }
 .thumbnail-hidden {
   display: none;
