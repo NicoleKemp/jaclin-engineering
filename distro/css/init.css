@@ -7416,6 +7416,10 @@ footer ul li + li {
   background: url(../images/gallery/2024/01_chilled_water_system/01.jpg) center no-repeat;
   background-size: cover;
 }
+.article-image.gallery-2024-02 {
+  background: url(../images/gallery/2024/02_bakery_upgrade/01.jpg) center no-repeat;
+  background-size: cover;
+}
 .article-image.gallery-2023-01 {
   background: url(../images/gallery/2023/01_chimney_repair/01.jpg) center no-repeat;
   background-size: cover;
@@ -7655,5 +7659,5 @@ footer ul li + li {
 }
 .article-details p {
   color: #555555;
-  margin: 0;
+  margin: 0 0 15px 0;
 }
