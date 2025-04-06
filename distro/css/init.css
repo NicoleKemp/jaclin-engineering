@@ -7420,6 +7420,14 @@ footer ul li + li {
   background: url(../images/gallery/2024/02_bakery_upgrade/01.jpg) center no-repeat;
   background-size: cover;
 }
+.article-image.gallery-2024-03 {
+  background: url(../images/gallery/2024/03_corrugated_cardboard/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2024-04 {
+  background: url(../images/gallery/2024/04_pet_recycling/01.jpg) center no-repeat;
+  background-size: cover;
+}
 .article-image.gallery-2023-01 {
   background: url(../images/gallery/2023/01_chimney_repair/01.jpg) center no-repeat;
   background-size: cover;
@@ -7450,6 +7458,10 @@ footer ul li + li {
 }
 .article-image.gallery-2023-08 {
   background: url(../images/gallery/2023/08_hospital_laundry_move/01.jpg) center no-repeat;
+  background-size: cover;
+}
+.article-image.gallery-2023-09 {
+  background: url(../images/gallery/2023/09_warm_water_reclamation_plant/01.jpg) center no-repeat;
   background-size: cover;
 }
 .article-image.gallery-2022-01 {
